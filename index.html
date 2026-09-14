@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#7c3f38" />
+    <meta
+      name="description"
+      content="หนังสือบันทึกความทรงจำและคำขอบคุณจากลูกถึงแม่"
+    />
+    <title>ถึงแม่ ด้วยรัก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c3f38'/%3E%3Cpath d='M32 49S12 38 12 23c0-10 13-14 20-4 7-10 20-6 20 4 0 15-20 26-20 26z' fill='%23f6ddc9'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main class="experience">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">♥</span><span>ความทรงจำของเรา</span>
+        </div>
+        <button
+          class="sound-button"
+          id="soundButton"
+          aria-pressed="false"
+          aria-label="เปิดเสียงบรรยากาศ"
+          title="เปิดเสียงบรรยากาศ"
+        >
+          <span class="sound-icon" aria-hidden="true">♪</span
+          ><span class="sound-label">เสียงเพลง</span>
+        </button>
+      </header>
+
+      <section class="book-stage" aria-label="หนังสืออวยพรวันเกิดแม่">
+        <div class="book-shadow" aria-hidden="true"></div>
+        <article class="book" id="book" tabindex="0" aria-live="polite">
+          <div class="binding" aria-hidden="true"></div>
+          <div class="page-stack" aria-hidden="true"></div>
+          <div class="page" id="page">
+            <div class="page-inner" id="pageInner"></div>
+          </div>
+        </article>
+      </section>
+
+      <nav class="controls" aria-label="ควบคุมหน้าหนังสือ">
+        <button
+          class="nav-button secondary"
+          id="prevButton"
+          aria-label="หน้าก่อนหน้า"
+        >
+          <span aria-hidden="true">←</span><span>ย้อนกลับ</span>
+        </button>
+        <div class="progress-wrap">
+          <span class="page-count" id="pageCount">ปกหนังสือ</span>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="ความคืบหน้า"
+            aria-valuemin="1"
+            aria-valuemax="8"
+            aria-valuenow="1"
+          >
+            <span id="progressBar"></span>
+          </div>
+        </div>
+        <button
+          class="nav-button primary"
+          id="nextButton"
+          aria-label="หน้าถัดไป"
+        >
+          <span>เปิดอ่าน</span><span aria-hidden="true">→</span>
+        </button>
+      </nav>
+      <p class="hint">แตะมุมหนังสือ หรือปัดซ้าย–ขวาเพื่อพลิกหน้า</p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
